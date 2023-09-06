@@ -161,7 +161,7 @@
     </form>
     <div id="prediction_result" style="color: white;">
         {% if probability_heart_disease is defined %}
-            <p>Probability of Heart Disease: {{ probability_heart_disease|percent }}</p>
+            <p>Probability of Heart Disease: {{ probability_heart_disease*100 |round(2) }}</p>
         {% endif %}
     </div>
     
